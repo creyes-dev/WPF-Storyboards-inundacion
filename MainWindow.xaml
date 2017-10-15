@@ -1,0 +1,22 @@
+﻿<Window x:Class="vaca2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="700" Width="1050">
+
+    <Window.Resources>
+        <Storyboard x:Key="sbConsecuenciasLluvia"></Storyboard>
+        <Storyboard x:Key="sbLluvia"></Storyboard>
+    </Window.Resources>
+    <Canvas Name="CanvasDiaLluvioso" Height="700" Width="1050" Background="LightBlue">
+        <Image Name="Agua2" Height="1021" Source="agua2.png" Stretch="Fill" Canvas.Left="0" Canvas.Top="646" Width="1205" Canvas.ZIndex="4"/>
+        <Image Source="arbol.png" Stretch="Fill" Canvas.Left="10" Canvas.Top="87" Canvas.ZIndex="6"/>
+        <Image Source="arbol.png" Stretch="Fill" Canvas.Left="742" Canvas.Top="98" Canvas.ZIndex="6"/>
+
+        <Image Source="pasto.png" Stretch="Fill" Canvas.Top="515" Width="1042" Height="154" Canvas.ZIndex="7" />
+        <Image Name="Vaca" Height="395" Canvas.Left="305" Source="vaca1.png" Stretch="Fill" Canvas.Top="264" Width="512" Canvas.ZIndex="9" />
+        <Image Name="Agua1" Height="1205" Source="agua1.png" Stretch="Fill" Canvas.Top="674" Width="1205" Canvas.Left="-163" Canvas.ZIndex="11"/>
+        <Image Name="Nube" Height="40" Canvas.Left="77" Source="nube1.png" Stretch="Fill" Visibility="Hidden"  Width="867" Canvas.ZIndex="12" />
+        <TextBox Name="txtIndice" Height="23" Canvas.Left="10" TextWrapping="Wrap" Text="0" Canvas.Top="45" Width="67" />
+        <CheckBox Name="chkEstaLloviendo" Content="Está lloviendo" Canvas.Left="92" Canvas.Top="52" Checked="chkEstaLloviendo_Checked" Unchecked="chkEstaLloviendo_Checked" />
+    </Canvas>
+</Window>
